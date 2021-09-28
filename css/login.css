@@ -1,0 +1,198 @@
+
+*{
+    -web-kit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+   padding:0px;
+   margin:0px;
+   font-family: 'Roboto', sans-serif;  
+}
+   html {
+     scroll-behavior: smooth;
+    }
+   body{
+       float: left;
+       width: 100%;
+       margin:0px;
+       position:relative;
+      height: 100vh;
+   }
+
+    .login_container{
+        max-width: 430px;
+        margin: 0px auto;
+       height:100%; 
+    }
+
+
+.login_section{
+    float: left;
+    width: 100%;
+    padding: 0px 10px;
+    height: 100%;
+}
+.login_box{
+display: flex;
+flex-direction: column;
+height: 100%;
+align-items: center;
+justify-content: center;
+}
+
+.login_section .login_form{
+    float: left;
+    width: 100%;
+    padding: 0px 0px;
+}
+.login_form h5{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-style: normal;
+    color: #232323;
+    font-weight: 500;
+}
+.login_section .login_form .company_logo{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.login_section .login_form .company_logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 32px;
+    font-style: normal;
+    color:#15dad7;
+    font-weight: 500;
+    gap: 0px 2px;
+}
+.login_section .login_form .company_logo a i{
+    font-size: 7px;
+    color: #ffbc00;
+}
+.login_section .login_form form .login_fields{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px 0px;
+}
+
+.login_section .login_form form .login_fields .input_field{
+width: 100%;
+}
+.login_section .login_form form .login_fields .input_field label{
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    color: #232323;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 16px;
+    text-align: left;
+    }
+   .input_phone_field{
+       display: flex;
+       gap: 0px 5px;
+   } 
+   .input_phone_field select {
+    border: 2px solid #D8D8D8;
+    outline: none;
+    padding: 10px 10px;
+}
+.input_phone_field input {
+    border: 2px solid #D8D8D8;
+    outline: none;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.login_section .login_form form .login_fields .submit_btn button{
+    color: #FFFFFF;
+    background-color: #ffbc00;
+    border-color: #ffbc00;
+    border: 1px solid transparent;
+    padding: 6px 0px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+    line-height: 16px;
+    width: 100%;
+    text-align: center;
+    height: 56px;
+    font-weight: 900;
+    }
+    .login_section .login_form form .login_fields .submit_btn a{
+        color: #FFFFFF;
+background-color: #ffbc00;
+border-color: #ffbc00;
+border: 1px solid transparent;
+padding: 6px 0px;
+cursor: pointer;
+user-select: none;
+font-size: 16px;
+line-height: 16px;
+width: 100% !important;
+text-align: center;
+height: 56px !important;
+font-weight: 600;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+        }
+    .terms_and_conditions{
+display: flex;
+flex-direction: column;
+gap: 5px 0px;
+align-items: center;
+justify-content: center;
+width: 100%;
+    }
+    .terms_and_conditions p{
+        font-size: 14px;
+        color: #232323;
+        font-weight: normal;
+    }
+    .terms_and_conditions a{
+        color: #ffbc00;
+        font-size: 14px;
+    }
+
+/*RESPONSIVE*/
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+   
+
+    }
+
+
+
+
+
+/*mobile rotation*/
+@media (max-width: 767px) {
+    
+    }
+
+/*mobile*/
+@media (max-width: 540px) { 
+   
+
+    }
+
+    @media (max-width: 325px) { 
+
+     
+        
+    }

@@ -156,6 +156,19 @@ div#contact{
 		display: flex;
 		flex-direction: column-reverse;
 }
+	.about_img_list{
+	justify-content: center !important;	
+	}
+	.about_img_list > div {
+    padding: 0px 5px;
+}
+	.services_img_list {
+   
+    justify-content: center;
+}
+	.services_img_list > div {
+    padding: 0px 5px;
+}
 #about img {
     width: 70px !important;
 }
@@ -164,16 +177,16 @@ div#contact{
     margin-top: 0px !important;
 }
 .about_list_data p {
-    font-size: 9px !important;
-    line-height: 22px !important;
+        font-size: 14px !important;
+    line-height: 28px !important;
 }
 .services_list_data h1 {
     font-size: 14px !important;
     margin-top: 0px !important;
 }
 .services_list_data p {
-    font-size: 9px !important;
-    line-height: 22px !important;
+  font-size: 14px !important;
+    line-height: 28px !important;
 }
 .services_list_data img {
     width: 43px;

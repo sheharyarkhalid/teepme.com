@@ -189,6 +189,16 @@ display: none;
     height: 100px;
     display: none;
 }
+.items_list {
+    display: grid !important;
+    width: 100%;
+grid-template-columns: 1fr 1fr;
+gap: 0px 5px;
+}
+.items_list div a {
+
+    width: 100% !important;
+}
 /* .content_parent .grid_6.omega {
 	width: 100%;
 	display: flex;

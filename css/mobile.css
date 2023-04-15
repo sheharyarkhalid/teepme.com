@@ -1,0 +1,31 @@
+
+@media(max-width:768px) {
+  .container_24 .grid_18 {
+      width: 100% !important;
+  } 
+  .container_24 .grid_6 {
+    width: 100% !important;
+      display: flex;
+      padding-top: 20px;
+  }
+  div#about {
+    width: 100%;
+    background-size: cover;
+}
+div#contact {
+    width: 100%;
+    background-size: cover;
+}
+div#services {
+    width: 100%;
+    background-size: cover;
+}
+div#testimonials {
+    width: 100%;
+    background-size: cover;
+}
+.container_24 .grid_24 {
+    margin-bottom: 23px;
+}
+  }
+  

@@ -180,6 +180,10 @@ div#contact{
         font-size: 14px !important;
     line-height: 28px !important;
 }
+	.services_list_data {
+   
+    padding: 13px;
+}
 .services_list_data h1 {
     font-size: 14px !important;
     margin-top: 0px !important;
@@ -187,6 +191,7 @@ div#contact{
 .services_list_data p {
   font-size: 14px !important;
     line-height: 28px !important;
+	    margin: 0px 0 5px 0 !important;
 }
 .services_list_data img {
     width: 43px;

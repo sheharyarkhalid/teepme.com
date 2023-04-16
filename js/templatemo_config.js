@@ -65,7 +65,7 @@ $(function(){
 								$(caller).click(function (event) {	
 										event.preventDefault();
 										var elementClick = $(caller).attr("href") ;
-										var destination = ( $(elementClick).index() * 645 ) ;
+										var destination = ( $(elementClick).index() * 675 ) ;
 										$("#mid_container_wap:not(:animated)").animate({ scrollTop: destination}, settings.speed);
 										return false;
 								});
@@ -77,7 +77,7 @@ $(function(){
 				// create responsive function
 				$.fn.avocadoAllignment = function(){
 						setHeight = $(window).height() ;
-						if(setHeight>(620 + 140)){
+						if(setHeight>(650 + 140)){
 								$("#banner img").css( "marginTop" , (((setHeight-395) / 2) - 70 ) /  2 );
 								$("#banner form").css( "marginTop" , (((setHeight-395) / 2)- 10 ) /  2 );
 								$("#footer > div").css( "marginTop" , (((setHeight-395) / 2)- 25 ) /  2 );

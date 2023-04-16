@@ -65,7 +65,7 @@ $(function(){
 								$(caller).click(function (event) {	
 										event.preventDefault();
 										var elementClick = $(caller).attr("href") ;
-										var destination = ( $(elementClick).index() * 415 ) ;
+										var destination = ( $(elementClick).index() * 625 ) ;
 										$("#mid_container_wap:not(:animated)").animate({ scrollTop: destination}, settings.speed);
 										return false;
 								});

@@ -77,7 +77,7 @@ $(function(){
 				// create responsive function
 				$.fn.avocadoAllignment = function(){
 						setHeight = $(window).height() ;
-						if(setHeight>(395 + 140)){
+						if(setHeight>(600 + 140)){
 								$("#banner img").css( "marginTop" , (((setHeight-395) / 2) - 70 ) /  2 );
 								$("#banner form").css( "marginTop" , (((setHeight-395) / 2)- 10 ) /  2 );
 								$("#footer > div").css( "marginTop" , (((setHeight-395) / 2)- 25 ) /  2 );

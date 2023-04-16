@@ -196,12 +196,7 @@ div#contact{
 .services_list_data img {
     width: 43px;
 }
-.contact_list > h1{
-    display: none;
-}
-.contact_list > p{
-display: none;
-}
+
 .contact_list iframe{
     width: 100px;
     height: 100px;

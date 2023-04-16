@@ -200,7 +200,7 @@ div#contact{
 .contact_list iframe{
     width: 100px;
     height: 100px;
-    display: none;
+
 }
 .items_list {
     display: grid !important;

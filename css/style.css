@@ -127,18 +127,28 @@ text-align: right;
         }
 
 
-        .road_map_single_data_box p{
-          
+        .road_map_list{
             transition:0.5s ease-in-out;
           }
-          .road_map_single_data_box p.right:hover {
-        margin-left: 10px;
-        transition:0.5s ease-in-out;
+          .road_map_list:hover .road_map_single_data_box span.right{
+            transform: translate(-10px, 0px);
+            transition:0.5s ease-in-out;
           }
-          .road_map_single_data_box p.left:hover {
+          .road_map_list:hover .road_map_single_data_box p.right{
+            margin-left: 10px;
+            transition:0.5s ease-in-out;
+          }
+
+
+          .road_map_list:hover .road_map_single_data_box span.left{
+            transform: translate(10px, 0px);
+            transition:0.5s ease-in-out;
+          }
+          .road_map_list:hover .road_map_single_data_box p.left{
             margin-right: 10px;
             transition:0.5s ease-in-out;
-              }
+          }
+        
 
 @media(max-width:540px){
     .road_map_single_data_box p {

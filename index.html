@@ -1,172 +1,628 @@
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   
-    <link rel="stylesheet" type="text/css" href="css/taxprintpage.css">
+<!DOCTYPE html>
+<html lang="en">
 
-       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-      
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-      <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC website</title>
 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
-      
-    </head>
-<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body id="page-top" class="index-body">
+
+    <nav class="navbar navbar-expand-lg navbar-dark home-intro fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index">
+     <img src="assets/img/navbar-logo.svg" class="logo" />
+    </a>
+            <div>
+                <button class="btn btn-primary btn-mobile" type="button">
+Try it for FREE
+<i class="fas fa-bars ml-1"></i>
+</button>
+                <button class="btn btn-primary ml-3 navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fas fa-bars ml-1 nav-mobile"></i>
+</button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" >Buy</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" >Game list</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger">Client panel</a></li>
+                    <button class="btn btn-primary">
+Try it for FREE
+<i class="fas fa-bars ml-1"></i>
+</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="masthead home-intro fade-in">
+        <div class="container">
+            <div class="masthead-heading text-uppercase sniffer">#1 ip sniffer</div>
+            <div class="masthead-subheading">for <span>all</span> gaming consoles</div>
+            <div class="masthead-subtitle text-capitalize font-weight-normal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+</svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+</svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+</svg> optimize your game connection
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+</svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+</svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+</svg>
+            </div>
+            <div class="masthead-subtitle  text-capitalize font-weight-normal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+</svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+</svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+</svg> increase wins
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+</svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+</svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+</svg>
+            </div>
+        </div>
+    </header>
+    <section class="works-for-section  slide-in from-left">
+        <div class="container d-flex justify-content-center">
+            <div class="card hover-zoom">
+                <div class="card-body">
+                    <h6 class="card-title font-weight-bold d-flex justify-content-center text-uppercase">
+                        <span>Works For</span>
+                    </h6>
+                    <p class="card-text d-flex justify-content-center">
+                        <img src="./assets/img/consoles.svg" alt="">
+                    </p>
+                    <div class="container d-flex justify-content-center">
+                        <a  class="btn px-4 btn-primary">Buy now</a>
+                        <a  class="btn px-4 text-white">Features</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="powerful-features-section">
+        <div class="container" id="features">
+            <div class="row justify-content-center slide-in from-right">
+                <h3 class="text-center text-white powerful">
+                    Packed with <span>Powerful</span> Features
+                </h3>
+            </div>
+            <div class="container features d-flex justify-content-center flex-wrap" style="width: 90%">
+                <div class="feature text-center fade-in hover-zoom col-lg-4 col-md-6 col-sm-6">
+                    <img src="./assets/img/download-to-storage-drive.svg" alt="" class="feature-icon">
+                    <h5 class="feature-header text-white font-weight-normal">Easy Installation</h5>
+                    <h6 class="feature-subheader">Simply run our installer and you are ready to go!</h6>
+                </div>
+                <div class="feature text-center fade-in  hover-zoom col-lg-4 col-md-6 col-sm-6">
+                    <img src="./assets/img/graduation.svg" alt="" class="feature-icon">
+                    <h5 class="feature-header text-white">Tutorials</h5>
+                    <h6 class="feature-subheader">We have plently of tutorials in our
+                        <span>Knowledgebase</span>
+                    </h6>
+                </div>
+                <div class="feature text-center fade-in hover-zoom col-lg-4 col-md-6 col-sm-6">
+                    <img src="./assets/img/chat.svg" alt="" class="feature-icon">
+                    <h5 class="feature-header text-white">24/7 Support</h5>
+                    <h6 class="feature-subheader">Both Community
+                        <span>Discord</span> & Support
+                        <span>Ticket System</span>
+                    </h6>
+                </div>
+                <div class="feature text-center fade-in hover-zoom col-lg-4 col-md-6 col-sm-6">
+                    <img src="./assets/img/diamond.svg" alt="" class="feature-icon">
+                    <h5 class="feature-header text-white">Friendly User Interface</h5>
+                    <h6 class="feature-subheader">Designed with our end customers in our thoughts.</h6>
+                </div>
+                <div class="feature text-center fade-in  hover-zoom col-lg-4 col-md-6 col-sm-6">
+                    <img src="./assets/img/malware.svg" alt="" class="feature-icon">
+                    <h5 class="feature-header text-white">100% Malware Free</h5>
+                    <h6 class="feature-subheader">Simply run our installer and you are ready to go!</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <div class="pakages_main_page">
         
-                    <div class="print_report_sheet form">
-                    <div class="termal_printer_invoice_heading">
-                      <img src="https://static.tossdown.com/images/bfa2095e-b6ef-4132-b4a2-f7fc5001f3c1.png">
-                      <h1>Thank you</h1>
-                     
+        <div class="pakages_list_section">
+        <div class="pakages_container">
+        <div class="pakages_list_box">
+        <div class="single_pakage_box">
+        <div class="single_pakage_box_data">
+        <div class="single_pakage_box_data_header">
+        <h3>VPN+Geo-Fence<span>.</span></h3>
+        </div>
+        <div class="single_pakage_box_data_content">
+        <div class="single_pakage_box_data_price_tag">
+        <h2>$5</h2>
+        <small>1 Week Plan</small></div>
+        <div class="single_pakage_box_data_get_start_btn"><a style="background:#03b3f9;color:#fff;">Buy Now</a></div>
+        <div class="single_pakage_features_list custom_pakage_feature_list">
+        <ul>
+        <li><i class="fal fa-check"></i>
+        <h6>Sweat VPN</h6>
+        </li>
+        <li><i class="fal fa-check"></i>
+        <h6>Sweat Duma</h6>
+        </li>
+        <li><i class="fal fa-check"></i>
+        <h6>40+ Connections</h6>
+        </li>
+        <li><i class="fal fa-check"></i>
+        <h6>24/7 Support</h6>
+        </li>
+       
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="single_pakage_box">
+            <div class="single_pakage_box_data">
+            <div class="single_pakage_box_data_header">
+            <h3>VPN+Geo-Fence<span>.</span></h3>
+            </div>
+            <div class="single_pakage_box_data_content">
+            <div class="single_pakage_box_data_price_tag">
+            <h2>$15</h2>
+            <small>1 Month Plan</small></div>
+            <div class="single_pakage_box_data_get_start_btn"><a style="background:#03b3f9;color:#fff;">Buy Now</a></div>
+            <div class="single_pakage_features_list custom_pakage_feature_list">
+            <ul>
+            <li><i class="fal fa-check"></i>
+            <h6>Sweat VPN</h6>
+            </li>
+            <li><i class="fal fa-check"></i>
+            <h6>Sweat Duma</h6>
+            </li>
+            <li><i class="fal fa-check"></i>
+            <h6>40+ Connections</h6>
+            </li>
+            <li><i class="fal fa-check"></i>
+            <h6>24/7 Support</h6>
+            </li>
+           
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+
+
+            <div class="single_pakage_box">
+                <div class="single_pakage_box_data">
+                <div class="single_pakage_box_data_header">
+                <h3>VPN+Geo-Fence<span>.</span></h3>
+                </div>
+                <div class="single_pakage_box_data_content">
+                <div class="single_pakage_box_data_price_tag">
+                <h2>$35</h2>
+                <small>3 Month Plan</small></div>
+                <div class="single_pakage_box_data_get_start_btn"><a style="background:#03b3f9;color:#fff;">Buy Now</a></div>
+                <div class="single_pakage_features_list custom_pakage_feature_list">
+                <ul>
+                <li><i class="fal fa-check"></i>
+                <h6>Sweat VPN</h6>
+                </li>
+                <li><i class="fal fa-check"></i>
+                <h6>Sweat Duma</h6>
+                </li>
+                <li><i class="fal fa-check"></i>
+                <h6>40+ Connections</h6>
+                </li>
+                <li><i class="fal fa-check"></i>
+                <h6>24/7 Support</h6>
+                </li>
+               
+                </ul>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+
+                <div class="single_pakage_box">
+                    <div class="single_pakage_box_data">
+                    <div class="single_pakage_box_data_header">
+                    <h3>VPN+Geo-Fence<span>.</span></h3>
                     </div>
-                    
-                    <div class="receiver_data_heading"><h5>RECEIPT</h5></div>
-                    <div class="termal_printer_receiver_data">
-                      <p>Shop Name: Vall Mall</p>
-                      <p>Date: 23/12/2022</p>
-                      <p>Manager: J Tsotetsi</p>
-                      <p>Ref Number: 0304545866</p>
+                    <div class="single_pakage_box_data_content">
+                    <div class="single_pakage_box_data_price_tag">
+                    <h2>$7.50</h2>
+                    <small>1 Week Plan + VIP</small></div>
+                    <div class="single_pakage_box_data_get_start_btn"><a style="background:#03b3f9;color:#fff;">Buy Now</a></div>
+                    <div class="single_pakage_features_list custom_pakage_feature_list">
+                    <ul>
+                    <li><i class="fal fa-check"></i>
+                    <h6>Sweat VPN</h6>
+                    </li>
+                    <li><i class="fal fa-check"></i>
+                    <h6>Sweat Duma</h6>
+                    </li>
+                    <li><i class="fal fa-check"></i>
+                    <h6>40+ Connections</h6>
+                    </li>
+                    <li><i class="fal fa-check"></i>
+                    <h6>24/7 Support</h6>
+                    </li>
+                    <li><i class="fal fa-check"></i>
+                        <h6>Premium Connection</h6>
+                        </li>
+                   
+                    </ul>
                     </div>
-                    <div class="thermal_report_sheet_tabel">
-                      <table class="thermal_printer_table">
-                        <thead>
-                            <tr>
-                                <th class="printer_item_list_heading">description</th>
-                                <th class="printer_item_list_heading right_align">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="printer_added_items">HP computer</td>
-                                <td class="printer_added_items right_align">R 900000</td>
-                            </tr>
-                            <tr>
-                              <td class="printer_added_items">HP computer</td>
-                              <td class="printer_added_items right_align">R 900000</td>
-                          </tr>
-                          <tr>
-                            <td class="printer_added_items">HP computer</td>
-                            <td class="printer_added_items right_align">R 900000</td>
+                    </div>
+                    </div>
+                    </div>
+
+                    <div class="single_pakage_box">
+                        <div class="single_pakage_box_data">
+                        <div class="single_pakage_box_data_header">
+                        <h3>VPN+Geo-Fence<span>.</span></h3>
+                        </div>
+                        <div class="single_pakage_box_data_content">
+                        <div class="single_pakage_box_data_price_tag">
+                        <h2>$20</h2>
+                        <small>1 Month Plan + VIP</small></div>
+                        <div class="single_pakage_box_data_get_start_btn"><a style="background:#03b3f9;color:#fff;">Buy Now</a></div>
+                        <div class="single_pakage_features_list custom_pakage_feature_list">
+                        <ul>
+                        <li><i class="fal fa-check"></i>
+                        <h6>Sweat VPN</h6>
+                        </li>
+                        <li><i class="fal fa-check"></i>
+                        <h6>Sweat Duma</h6>
+                        </li>
+                        <li><i class="fal fa-check"></i>
+                        <h6>40+ Connections</h6>
+                        </li>
+                        <li><i class="fal fa-check"></i>
+                        <h6>24/7 Support</h6>
+                        </li>
+                        <li><i class="fal fa-check"></i>
+                            <h6>Premium Connection</h6>
+                            </li>
+                       
+                        </ul>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+                        <div class="single_pakage_box">
+                            <div class="single_pakage_box_data">
+                            <div class="single_pakage_box_data_header">
+                            <h3>VPN+Geo-Fence<span>.</span></h3>
+                            </div>
+                            <div class="single_pakage_box_data_content">
+                            <div class="single_pakage_box_data_price_tag">
+                            <h2>$50</h2>
+                            <small>3 Month Plan + VIP</small></div>
+                            <div class="single_pakage_box_data_get_start_btn"><a style="background:#03b3f9;color:#fff;">Buy Now</a></div>
+                            <div class="single_pakage_features_list custom_pakage_feature_list">
+                            <ul>
+                            <li><i class="fal fa-check"></i>
+                            <h6>Sweat VPN</h6>
+                            </li>
+                            <li><i class="fal fa-check"></i>
+                            <h6>Sweat Duma</h6>
+                            </li>
+                            <li><i class="fal fa-check"></i>
+                            <h6>40+ Connections</h6>
+                            </li>
+                            <li><i class="fal fa-check"></i>
+                            <h6>24/7 Support</h6>
+                            </li>
+                            <li><i class="fal fa-check"></i>
+                                <h6>Premium Connection</h6>
+                                </li>
+                           
+                            </ul>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+
+
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+    <section class="incredible-features-section">
+        <div class="container">
+            <div class="row justify-content-around">
+                <h3 class="text-white slide-in from-top incredible">
+                    <span>Incredible</span> Features
+                </h3>
+            </div>
+            <div class="container mt-5 justify-content-around">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 order-lg-1 incredible-features-rows">
+                        <div class="5">
+                            <div class="d-flex justify-content-start slide-in from-left">
+                                <img src="./assets/img/flash.svg" alt="">
+                                <h5 class="text-white">
+                                    Advanced Packet Filters
+                                </h5>
+                            </div>
+                            <p class="px-4 fade-in d-flex justify-content-start incredible-features-row">
+                                <img class="dots-1" src="./assets/img/dots.svg" alt=""> Our tool allows you to indentify packets automatically, which ones are comming from your Xbox Party Chat, or which ones are the Game Server IP's!
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <div class="d-flex justify-content-start slide-in from-left">
+                                <img src="./assets/img/flash.svg" alt="">
+                                <h5 class="text-white">
+                                    PS4 Usernames
+                                </h5>
+                            </div>
+                            <p class="px-4 fade-in d-flex justify-content-start incredible-features-row">
+                                <img class="dots-2" src="./assets/img/dots.svg" alt=""> We are the only tool on the market that offers a PS4 Username AI feature. This feature allows you to obtain which user owns which packet, and assosicate the IP with
+                                a Username!
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <div class="d-flex justify-content-start slide-in from-left">
+                                <img src="./assets/img/flash.svg" alt="">
+                                <h5 class="text-white">
+                                    XBOX Filters
+                                </h5>
+                            </div>
+                            <p class="px-4 fade-in d-flex justify-content-start incredible-features-row" style="padding-left: 15px !important;">
+                                Create your own or use our premade xbox filters to retrive packets from specific games!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 order-lg-2 text-center">
+                        <img class="desktop slide-in from-top" src="./assets/img/desktop.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why-we-are-better-section ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 class="best text-center text-white fade-in">OR THE BEST?</span>
+                </h1>
+                <h3 class="text-center text-white mb-5 slide-in from-right" style="margin-top: -130px;">Why we are <span>better</span></h3>
+            </div>
+            <div class="container overflow-auto">
+                <table class="table fade-in">
+                    <thead>
+                        <tr>
+                            <th class="text-white" scope="col">Features</th>
+                            <th class="text-white  text-center" scope="col">OctoSniff</th>
+                            <th class="text-center" scope="col" style="color: rgba(246, 246, 255, 0.47);">ConsoleShifter</th>
+                            <th class="text-center" scope="col" style="color: rgba(246, 246, 255, 0.47);">WireShark</th>
+                            <th class="text-center" scope="col" style="color: rgba(246, 246, 255, 0.47);">LANC</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PS4 Username AI</td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
                         </tr>
                         <tr>
-                          <td class="printer_added_items">HP computer</td>
-                          <td class="printer_added_items right_align">R 900000</td>
-                      </tr>
-                           
-                            <tr class="printer_item_tax_main">                          
-                              <td class="printer_item_tax">VAT @ 15%</td>
-                              <td class="printer_item_tax right_align">R 123.90</td>
-                          </tr> 
-                          <tr class="printer_item_total_main">                          
-                            <td class="printer_item_total">Total</td>
-                            <td class="printer_item_total right_align">R 94</td>
-                        </tr> 
-                        </tbody>
-
-
-                    </table>
+                            <td>PS3 Username AI</td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>PC Username AI</td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>Xbox One Gamertag AI</td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>Dynamic Packet Filters</td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>Custom Packet Filters</td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>Premium Geo IP Lookup</td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>Username/GT To IP Lookup</td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>IP To Username/GT</td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>DDoS Protection Lookup</td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>Customizable Interface</td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>Caputre All IP's</td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>Discord Presence</td>
+                            <td class="text-center"><img src="./assets/img/check-mark.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                            <td class="text-center"><img src="./assets/img/minus.svg" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="get-started-section mt-5 pt-5">
+        <h3 class="card-title d-flex justify-content-center text-white slide-in from-top started"> Get <span style="margin-left: 9px;"> Started</span></h3>
+        <div class="container d-flex justify-content-center">
+            <div class="card hover-zoom">
+                <div class="card-body fade-in">
+                    <p class="card-text text-white d-flex font-weight-light justify-content-center text-center fade-in">
+                        We accept multiple different payment methods, including Credit/Debit Card, Bank Transfers, Crypto& so many others!
+                    </p>
+                    <div class="container d-flex justify-content-center">
+                        <a class="btn px-4 btn-primary">Buy now</a>
+                        <a id="trial" class="btn px-4 text-white">Free trial</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="bill_description">
-                      <p>THE MOST REWARDING WAY TO SHOP AT WOOLIES</p>
-                     <img src="image/main.png">
-                     <img src="image/main.png">
-                      <div class="app_links">
-                        <a> <img src="image/apple.jpg"></a>
-                        <a> <img src="image/play.jpg"></a>
-                        <a> <img src="image/play.jpg"></a>
-                      </div>
-                    </div>
+    <footer class="text-center text-lg-start text-muted">
 
-                     <div class="item_recomendation">
-                      <h4>RECOMMENDED FOR YOU</h4>
-                      <div class="item_recomendation_list">
-                        <div class="single_item_recomendation">
-                        <figure><img src="image/main.png"></figure>
-                         <figcaption>
-                          <h3>Large Bnanans 950 g</h3>
-                          <span>R 230</span>
-                          <div class="item_review">
-                          <div class="rating_stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fal fa-star"></i>
-                          </div>
-                          <p>17 reviews</p>
-                          </div>
-                         </figcaption>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+
+                <div class="container_flex mt-3">
+
+                    <div class="container_flex__block">
+
+                        <h6 class="text-uppercase fw-bold">
+                            <img src="assets/img/navbar-logo.svg" alt="..." class="logo" />
+                        </h6>
+                        <p>
+                            OctoSniff is the first tool ever created to filter out packets & decrypt the usernames in them, started already back in early 2015 and still going strong into 2021!
+                        </p>
+                        <div>
+                            <a href="#" class="me-4 text-reset footer-link-icon">
+<img src="./assets/img/twitter.svg" alt="">
+</a>
+                            <a href="" class="me-4 text-reset footer-link-icon">
+<img src="./assets/img/discord.svg" alt="">
+</a>
+                            <a href="" class="me-4 text-reset footer-link-icon">
+<img src="./assets/img/youtube.svg" alt="">
+</a>
+                            <a href="" class="me-4 text-reset footer-link-icon">
+<img src="./assets/img/reddit.svg" alt="">
+</a>
+                            <p class="pt-3">
+                                Copyright @ 2023-2025 . All rights reserved
+                            </p>
                         </div>
-                        <div class="single_item_recomendation">
-                          <figure><img src="image/main.png"></figure>
-                           <figcaption>
-                            <h3>Large Bnanans 950 g</h3>
-                            <span>R 230</span>
-                            <div class="item_review">
-                            <div class="rating_stars">
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fal fa-star"></i>
-                            </div>
-                            <p>17 reviews</p>
-                            </div>
-                           </figcaption>
-                          </div>
-                          <div class="single_item_recomendation">
-                            <figure><img src="image/main.png"></figure>
-                             <figcaption>
-                              <h3>Large Bnanans 950 g</h3>
-                              <span>R 230</span>
-                              <div class="item_review">
-                              <div class="rating_stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fal fa-star"></i>
-                              </div>
-                              <p>17 reviews</p>
-                              </div>
-                             </figcaption>
-                            </div>
-                      </div>
-                     
-                     </div> 
-
-                     <div class="fuel_pay_box">
-                      <h2>PAY FOR</h2>
-                      <h3>FUEL</h3>
-                      <p>WITH YOUR WOOLIE CREDIT CARD</p>
-                      <a>LEARN MORE</a>
-                      <div class="support_box"><span>Supported by </span><strong>absa</strong></div>
-                     </div>
-
-                    <div class="slip_social_links">
-                      <h3>DID'NT FIND WHAT YOU WERE LOOKING FOR ?</h3>
-                      <p>send us your question and we'll get back to you!</p>
-                       <a>SEND US YOUR QUESTION</a>
-                       <div class="social_links">
-                        <a><i class="fab fa-facebook-f"></i></a>
-                        <a><i class="fab fa-twitter"></i></a>
-                        <a><i class="fab fa-pinterest-p"></i></a>
-                        <a><i class="fab fa-instagram"></i></a>
-                        <a><i class="fab fa-youtube"></i></a>
-                       
-                       </div>
                     </div>
-                  </div>
 
+                    <div class="container_flex__block col-xs-6">
 
-</body></html>
+                        <h6 class="text-uppercase fw-bold mb-4 text-white">
+                            Home
+                        </h6>
+                        <p>
+                            <a href="#features" class="text-reset text-decoration-none">Features</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset text-decoration-none">Learn more</a>
+                        </p>
+                        <p>
+                            <a class="text-reset text-decoration-none">Game list</a>
+                        </p>
+                        <p>
+                            <a class="text-reset text-decoration-none">Client panel</a>
+                        </p>
+                    </div>
+
+                    <div class="container_flex__block col-xs-6">
+
+                        <h6 class="text-uppercase fw-bold mb-4 text-white">
+                            Product
+                        </h6>
+                        <p><a  class="text-reset text-decoration-none">Buy OctoSniff</a></p>
+                        <p><a  class="text-reset text-decoration-none">Get Trial</a></p>
+                        <p><a  class="text-reset text-decoration-none">Privacy Policy</a></p>
+                        <p><a class="text-reset text-decoration-none">Terms of services</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="./js/observers.js" defer></script>
+
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c96ad1d7ca3a08d","token":"b2b8610094134d90ba08b5555933d4ba","version":"2023.4.0","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

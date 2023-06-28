@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" type="text/css" href="CSS-Files/form.css"> 
+  <link rel="stylesheet" type="text/css" href="CSS-Files/Library.css">
+  <link rel="stylesheet" type="text/css" href="CSS-Files/stylemain.css">
+
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- fontawsome link start-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+
+  <!-- fontawsome link end -->
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wrick17/calendar-plugin@master/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wrick17/calendar-plugin@master/theme.css">
+
+  <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/wrick17/calendar-plugin@master/calendar.min.js"></script>
+
+
+  <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+
+  <script src="script/app.js"></script>
+  <script src="script/validation.js"></script>
+
+</head>
+
+<body>
+
+
+  <div class="dashboard-sidebar">
+    <div class="res_close_btn hamburger_img"><i class="fal fa-times"></i></div>
+    <div class="dashboard-sidebar-logo">
+      <h2> Job Manager</h2>
+    </div>
+    <div class="sidebar-menu-list">
+
+
+
+
+      <div class="sidebar-menu-list-box">
+
+        <div class="single-sidebar-menu-list open">
+          <span>Job Manager</span>
+
+
+        </div>
+        <div class="single-menu-data-box">
+
+         
+
+          <div class="single-menu-data-list">
+            <div class="single-menu-data-list-tag">
+              <a href="task-manager.html" class="open">Job Manager</a>
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="content-section">
+    <section class="dashboard-header">
+      <div class="header-container">
+        <div class="web_header_main">
+          <div class="web_header_0">
+            <ul class="web_header_0_list_0">
+              <li class="li_0 web_header_logo">
+                <a class="header-hamburger-btn">
+                  <i class="ri-menu-fill hamburger_img"></i>
+                </a>
+              </li>
+              <ul class="web_header_0_list_1">
+                <li class="li_0"><a to="/"> Job Manager</a> </li>
+              </ul>
+            </ul>
+            <ul class="web_header_0_list_2">
+              <li class="li_0"> 
+                <div id="user_detail">
+                  <i class="fal fa-user" style="font-size:16px;color: #4A4A4A;"></i>
+                  <div id="detail_box">
+                    <a href="login.html">Logout</a>
+                  </div>
+              </div>
+                        
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="content-section-main">
+      <div class="content-container">
+        <div class="responsive_content_manage">
+          <div class="pagination-list">
+            <!-- <h5> Task Manager</h5> -->
+            <button type="button" class="" data-toggle="modal" data-target="#task_modal">
+              Add Job
+            </button>
+          </div>
+
+         
+          <table id="record_data_tabel" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+              <tr>
+                <th>Job Title</th>
+                <th>Category</th>
+                <th>Due Date</th>
+                <th>status</th>
+                <th>Edit</th>
+                <th>Delete</th>
+
+              </tr>
+            </thead>
+            <tbody>
+
+          
+                  <tr>
+                    <td>Job one</td>
+                    <td> 
+                       <button type="button" class="change_category_btn" data-toggle="modal" data-target="#change_category_modal">
+                     work
+                    </button>
+                  </td>
+                    <td>5/2/2024</td>
+                    <td>
+                      <button type="button" class="change_category_btn" data-toggle="modal" data-target="#change_status_modal">
+                       Pending
+                       </button>
+                    </td>
+                    <td>
+                      <button type="button" class="change_category_btn" data-toggle="modal" data-target="#edit_task_modal">
+                        <i class='fa fa-edit'></i>
+                        </button>
+                    </td> 
+                    <td>
+                      <button type="button" class="change_category_btn" data-toggle="modal" data-target="#delete_task_modal">
+                        <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Job two</td>
+                    <td> <button type="button" class="change_category_btn" data-toggle="modal" data-target="#change_category_modal">
+                      Travel
+                     </button></td>
+                    <td>5/2/2024</td>
+                    <td>
+                      <button type="button" class="change_category_btn" data-toggle="modal" data-target="#change_status_modal">
+                        completed
+                        </button>
+                       
+                    </td>
+                   <td>
+                    <button type="button" class="change_category_btn" data-toggle="modal" data-target="#edit_task_modal">
+                      <i class='fa fa-edit'></i>
+                      </button>
+                  
+                  </td> 
+                    <td>
+                      <button type="button" class="change_category_btn" data-toggle="modal" data-target="#delete_task_modal">
+                        <i class="fas fa-trash-alt"></i>
+                        </button>
+                     
+                    </td>
+                  </tr>
+           
+
+
+
+            </tbody>
+
+          </table>
+
+
+        
+<!-- Add Task Popup -->
+
+          <div class="task_modal modal fade" id="task_modal" tabindex="-1" role="dialog" aria-labelledby="task_modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Job</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form method="POST" id="add_room_form" novalidate="novalidate">
+                  <div class="form_design_one_content_box">
+
+
+
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_one_single_field_box">
+                        <span>Title</span>
+                        <input type="text" placeholder="Enter Title" name="Title" id="Title" />
+
+                      </div>
+                      <label class="error" generated="true" for="Title"></label>
+                    </div>
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_one_single_field_box">
+                        <span>Select Category</span>
+                        <select name="category" id="category">
+                         <option>Personal</option>
+                         <option>Travel</option>
+                         <option>Work</option>
+                        </select>
+                      </div>
+                      <label class="error" generated="true" for="Category"></label>
+                    </div>
+
+
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_three_single_field_box">
+                        <span>Select a Due Date</span>
+                       
+                      </div>
+                    </div>
+
+                    <div id="calendar-wrapper"></div>
+                  
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_two_single_field_box">
+                        <span>Remind me</span>
+                        <input type="checkbox" placeholder="" name="remind" id="remind" />
+
+                      </div>
+                      <label class="error" generated="true" for="remind"></label>
+                    </div>
+
+
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_one_single_field_box">
+                        <span>Note</span>
+                        <input type="text" placeholder="Enter Note" name="Note" id="Note" />
+
+                      </div>
+                      <label class="error" generated="true" for="Note"></label>
+                    </div>
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_one_single_field_box">
+                        <span>Sub Task</span>
+                        <input type="text" placeholder="Enter subtask" name="subtask" id="subtask" />
+
+                      </div>
+                      <label class="error" generated="true" for="subtask"></label>
+                    </div>
+
+                    <div class="form_design_one_submit_btn">
+                      <button id="add_room_btn" class="add_room_btn" >
+                        Add Task
+                      </button>
+                    </div>
+                  </div>
+                </form>
+               
+              </div>
+            </div>
+          </div>
+
+<!-- Edit Task Popup -->
+
+          <div class="task_modal modal fade" id="edit_task_modal" tabindex="-1" role="dialog" aria-labelledby="edit_task_modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Job</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form method="POST" id="add_room_form" novalidate="novalidate">
+                  <div class="form_design_one_content_box">
+
+
+
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_one_single_field_box">
+                        <span>Title</span>
+                        <input type="text" placeholder="Enter Title" name="Title" id="Title" />
+
+                      </div>
+                      <label class="error" generated="true" for="Title"></label>
+                    </div>
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_one_single_field_box">
+                        <span>Category</span>
+                        <input type="text" placeholder="Enter Category" name="Category" id="Category" />
+
+                      </div>
+                      <label class="error" generated="true" for="Category"></label>
+                    </div>
+
+
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_three_single_field_box">
+                        <span>Select a Due Date</span>
+                       
+                      </div>
+                    </div>
+
+                    <div id="calendar-wrapper-update"></div>
+                  
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_two_single_field_box">
+                        <span>Remind me</span>
+                        <input type="checkbox" placeholder="" name="remind" id="remind" />
+
+                      </div>
+                      <label class="error" generated="true" for="remind"></label>
+                    </div>
+
+
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_one_single_field_box">
+                        <span>Note</span>
+                        <input type="text" placeholder="Enter Note" name="Note" id="Note" />
+
+                      </div>
+                      <label class="error" generated="true" for="Note"></label>
+                    </div>
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_one_single_field_box">
+                        <span>Sub Task</span>
+                        <input type="text" placeholder="Enter subtask" name="subtask" id="subtask" />
+
+                      </div>
+                      <label class="error" generated="true" for="subtask"></label>
+                    </div>
+
+                    <div class="form_design_one_submit_btn">
+                      <button id="add_room_btn" class="add_room_btn" type="submit">
+                        Update Job
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              
+              </div>
+            </div>
+          </div>
+
+        <!-- Edit category Popup -->
+
+          <div class="task_modal modal fade" id="change_category_modal" tabindex="-1" role="dialog" aria-labelledby="change_category_modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Change Category</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form method="POST" id="add_room_form" novalidate="novalidate">
+                  <div class="form_design_one_content_box"> 
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_one_single_field_box">
+                        <span>Select Category</span>
+                       <select name="Category" id="Category">
+                        <option>Personal</option>
+                        <option>Travel</option>
+                        <option>Work</option>
+                       </select>
+                      
+                      </div>
+                      <label class="error" generated="true" for="Category"></label>
+                    </div>
+                    <div class="form_design_one_submit_btn">
+                      <button id="add_room_btn" class="add_room_btn" type="submit">
+                    Save
+                      </button>
+                    </div>
+                  </div>
+                </form>
+               
+              </div>
+            </div>
+          </div>
+
+   <!-- Edit status Popup -->
+
+          <div class="task_modal modal fade" id="change_status_modal" tabindex="-1" role="dialog" aria-labelledby="change_status_modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout" role="document">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Change Category</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form method="POST" id="add_room_form" novalidate="novalidate">
+                  <div class="form_design_one_content_box"> 
+                    <div class="form_design_one_field_box">
+                      <div class="form_design_one_single_field_box">
+                        <span>Select status</span>
+                       <select name="status" id="status">
+                        <option>Completed</option>
+                        <option>Pending</option>
+                       </select>
+                      </div>
+                      <label class="error" generated="true" for="status"></label>
+                    </div>
+                    <div class="form_design_one_submit_btn">
+                      <button id="add_room_btn" class="add_room_btn" type="submit">
+                       Save
+                      </button>
+                    </div>
+                  </div>
+                </form>
+               
+              </div>
+            </div>
+          </div>
+
+  <!-- Delete task -->
+
+  <div class="task_modal modal fade" id="delete_task_modal" tabindex="-1" role="dialog" aria-labelledby="delete_task_modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Delete Job</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="POST" id="add_room_form" novalidate="novalidate">
+          <div class="form_design_one_content_box"> 
+            <div class="form_design_one_field_box">
+              <div class="form_design_three_single_field_box">
+               <span>Are you sure you want to delete Job ?</span>
+              </div>
+             
+            </div>
+            <div class="form_design_one_submit_btn">
+              <button id="add_room_btn" class="add_room_btn" type="submit">
+              Delete
+              </button>
+            </div>
+          </div>
+        </form>
+       
+      </div>
+    </div>
+  </div>
+        
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

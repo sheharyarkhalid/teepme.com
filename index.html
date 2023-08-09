@@ -730,6 +730,16 @@
         $(".cart_navigation").removeClass("active");
         $(".draging_icon").removeClass("active");
       });
+
+       $(document).mouseup(function (e) {
+             var container_two = $(".cart_navigation.active");
+             if(!container_two.is(e.target) && 
+             container_two.has(e.target).length === 0) {
+               container_two.removeClass("active");
+             $(".draging_icon").removeClass("active");
+             }
+         });
     </script>
+    
   </body>
 </html>

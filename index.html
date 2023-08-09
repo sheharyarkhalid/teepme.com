@@ -164,7 +164,7 @@
         flex-direction: column;
         transform: translate(100%);
         transition: 0.3s;
-        overflow: hidden;
+
       }
       .cart_navigation.active {
         transform: translate(0%);
@@ -300,10 +300,11 @@
       }
       .cart_navigation_item_list {
         display: block;
-        overflow: auto;
-        margin-bottom: 25px;
-            padding: 0px 33px 0px 33px;
-            height: 100%;
+    overflow: auto;
+    margin-bottom: 22px;
+    padding: 0px 33px 0px 33px;
+    height: calc(100vh - 27em);
+         
       }
       .cart_navigation_item_list::-webkit-scrollbar {
   width: 6px;
@@ -450,8 +451,6 @@
       .cart_navigation_proceeding_btn {
         width: 100%;
     display: grid;
-    position: sticky;
-    bottom: 0px;
     box-shadow: 0px -5px 14px 0px #00000029;
     background: #ffffff;
     padding: 10px 32px;
@@ -526,9 +525,9 @@
         } */
       }
       @media (max-width: 540px) {
-        /* .cart_navigation_item_list {
-          height: calc(100vh - 18em);
-        } */
+        .cart_navigation_item_list {
+          height: calc(100vh - 22em);
+        } 
         .cart_navigation {
     width: 310px;
   }
@@ -579,15 +578,9 @@
   }
       }
 
-      @media (max-width: 1024px) {
-        /* .quantity_tab_data li a {
-          padding: 10px 35px;
-          font-size: 16px;
-          line-height: 25px;
-        } */
-      }
     </style>
     <div class="cart_navigation">
+      <div class="cart_navigation_content">
       <div class="cart_navigation_header">
         <div class="cart_navigation_heading">
           <h3>make your box</h3>
@@ -715,6 +708,7 @@
           </div>
         </div>
        
+      </div>
       </div>
       <div class="cart_navigation_proceeding_btn">
         <div class="drag_btn_main">

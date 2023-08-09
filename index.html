@@ -1,76 +1,754 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<title>Sophie Bluel - Architecte d'intérieur</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
-	<meta name="description" content="">
-	<link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-<header>
-	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
-	<nav>
-		<ul>
-			<li>projets</li>
-			<li>contact</li>
-			<li><a href="login.html">login</a></li>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
-		</ul>
-	</nav>
-</header>
-<main>
-	<section id="introduction">
-		<figure>
-			<img src="./assets/images/sophie-bluel.png" alt="">
-		</figure>
-		<article>
-			<h2>Designer d'espace</h2>
-			<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
-			<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
-			<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
-		</article>
-	</section>
-	<section id="portfolio">
-		<h2>Mes Projets</h2>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
 
-		<div class="Filters">
-			<div class="buttonSpace">
-				<button id="button-show-all" class="buttonClass">Tous</button>
-			</div>
-		</div>
-		
-		<div class="gallery">
-			
-		</div>
-	</section>
-	<section id="contact">
-		<h2>Contact</h2>
-		<p>Vous avez un projet ? Discutons-en !</p>
-		<form action="#" method="post">
-			<label for="name">Nom</label>
-			<input type="text" name="name" id="name">
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email">
-			<label for="message">Message</label>
-			<textarea name="message" id="message" cols="30" rows="10"></textarea>
-			<input type="submit" value="Envoyer">
-		</form>
-	</section>
-</main>
+    <!-- fontawsome link start-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- fontawsome link end -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<footer>
-	<nav>
-		<ul>
-			<li>Mentions Légales</li>
-		</ul>
-	</nav>
-</footer>
-<script src="./assets/script.js" type="text/javascript"></script>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      /* drag btn css start */
+      #parent {
+        max-width: 1140px;
+        margin: 0 auto;
+        height: 100vh;
+        position: relative;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+      }
+      .draging_icon {
+        background: #000;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    box-shadow: 1px 14px 14px -9px #00000040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    right: 10px;
+
+      }
+      .draging_icon > img {
+    width: 40px;
+    object-fit: cover;
+    padding-bottom: 5px;
+}
+.drag_click_btn_qty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.drag_click_btn_qty span {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #fff !important;
+}
+.drag_click_btn_qty small {
+  color: #fff !important;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 0px 5px;
+}
+      /* .draging_icon::before {
+        content: "+";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 41px;
+        font-weight: 600;
+      } */
+      .draging_icon {
+        visibility: visible;
+        opacity: 1px;
+        transition: 0.8s;
+      }
+      .draging_icon.active {
+        visibility: hidden;
+        opacity: 0px;
+        transition: 0.3s;
+      }
+      /* drag btn css end */
+
+      .cart_navigation {
+        position: fixed;
+        right: 0px;
+        background: #ffffff;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+        height: 100vh;
+        width: 450px;
+        z-index: 999;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        transform: translate(100%);
+        transition: 0.3s;
+      }
+      .cart_navigation.active {
+        transform: translate(0%);
+        transition: 0.5s;
+        transition-delay: 0.5s, 0s;
+      }
+
+      .cart_navigation_header {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+      }
+      .cart_navigation_heading {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 14px;
+        padding: 0px 32px;
+      }
+      .cart_navigation_heading h3 {
+        font-family: Anton;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    margin: 0px;
+    text-transform: uppercase;
+      }
+
+      .cart_navigation_header .cart_navigation_close_btn i {
+        color: #000000;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .quantity_tabs_parent {
+        padding: 0px 8px;
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .quantity_tabs_main {
+        border: 1px solid #00000066;
+        border-radius: 8px;
+        padding: 24px 24px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .quantity_tabs_main h6 {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        margin: 0px;
+        padding-bottom: 16px;
+      }
+      .quantity_tab_data {
+        background: #f4f5f6;
+        border-radius: 54px;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0px;
+      }
+      .quantity_tab_data li {
+        list-style: none;
+      }
+      .quantity_tab_data li a {
+        padding: 11px 55px;
+        font-family: Poppins;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #000;
+        display: inline-block;
+        border: unset !important;
+        border-radius: unset !important;
+      }
+      .quantity_tab_data li a:hover {
+        border: unset !important;
+        border-radius: unset !important;
+      }
+      .quantity_tab_data li a.active {
+        background: #000000 !important;
+        color: #fff !important;
+        text-decoration: unset !important;
+        border-radius: 54px !important;
+      }
+      .box_discount_section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 12px;
+      }
+      .box_discount_section img {
+        width: 20px;
+        object-fit: cover;
+        margin-right: 8px;
+      }
+      .box_discount_section p {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        margin: 0px;
+      }
+      .drag_cart_items_heading {
+        display: flex;
+        width: 100%;
+        padding: 0px 10px 23px 32px;
+      }
+      .drag_cart_items_heading h5 {
+        font-family: Anton;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 45px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000000;
+        margin: 0px;
+        text-transform: uppercase;
+      }
+      .cart_navigation_item_list {
+        display: block;
+        overflow: auto;
+        margin-bottom: 25px;
+            padding: 0px 33px 0px 33px;
+      }
+      .cart_navigation_item_list::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.cart_navigation_item_list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+ 
+}
+
+/* Handle */
+.cart_navigation_item_list::-webkit-scrollbar-thumb {
+  background: #FCEEDD;
+}
+
+/* Handle on hover */
+.cart_navigation_item_list::-webkit-scrollbar-thumb:hover {
+  background: #FCEEDD;
+}
+      .cart_navigation_single_item {
+        border-bottom: 1px solid #00000026;
+        padding-bottom: 20px;
+        display: flex;
+        width: 100%;
+        margin-bottom: 23px;
+      }
+      .cart_navigation_single_item:last-child{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        border-bottom: 0px;
+      }
+      .cart_navigation_single_item figure {
+        width: 74px;
+    height: 74px;
+    margin: 0px;
+    min-width: 74px !important;
+    max-width: 74px !important;
+      }
+      .cart_navigation_single_item figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background: #F9F7F1;
+        border-radius: 2px;
+      }
+      .cart_navigation_single_item_detail {
+        display: flex;
+        flex-direction: column;
+        padding-left: 14px;
+      }
+
+      .cart_navigation_single_item_detail p {
+        font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+    color: #212121;
+    margin-bottom: 8px;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 44px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+      }
+
+      .cart_navigation_qty_main {
+        display: flex;
+        align-items: center;
+      }
+      .cart_navigation_qty_plus_minu_btns {
+        display: flex;
+    align-items: center;
+    margin-right: 8px;
+    padding: 8px 8px;
+    background: #F0F0F0;
+      }
+      .counter_minus_btn a {
+        width: 24px !important;
+    height: 24px !important;
+    color: #000000 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0px !important;
+    cursor: pointer;
+      }
+      .counter_minus_btn a i {
+        font-size: 14px;
+      }
+      .counter_plus_btn a {
+        width: 24px !important;
+    height: 24px !important;
+    color: #000000 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0px !important;
+    cursor: pointer;
+      }
+
+      .counter_plus_btn a i {
+        font-size: 14px;
+      }
+      .total_count_quantity {
+        color: #000000;
+    font-size: 14px;
+    font-weight: 600 !important;
+    font-family: Poppins;
+    letter-spacing: 0em;
+    display: flex !important;
+    width: 44px;
+    align-items: center;
+    justify-content: center;
+      }
+
+      .cart_navigation_del_btns {
+        display: flex;
+        align-items: center;
+        margin-right: 8px;
+       
+        
+      }
+      .cart_navigation_del_btns a {
+        width: 36px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0px !important;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+      }
+      .cart_navigation_del_btns a i {
+        color: #000;
+        font-size: 18px;
+      }
+
+      .cart_navigation_proceeding_btn {
+        width: 100%;
+    display: grid;
+    position: sticky;
+    bottom: 0px;
+    box-shadow: 0px -5px 14px 0px #00000029;
+    background: #ffffff;
+    padding: 10px 32px;
+    margin-top: auto;
+      }
+      .drag_btn_main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 30px;
+        width: 100%;
+        align-items: center;
+      }
+      .subtotal_price_calculation {
+        display: flex;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+      }
+      .subtotal_price_calculation span {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        padding-bottom: 4px;
+
+        color: #000000;
+      }
+
+      .subtotal_price_calculation strong {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+      }
+      .cart_navigation_checkout_btn {
+        display: flex;
+        width: 100%;
+
+      }
+      .cart_navigation_checkout_btn a {
+        display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    padding: 12px 10px;
+    color: #ffffff !important;
+    background: #000000;
+    border-radius: 50px;
+    text-transform: uppercase !important;
+      }
+
+      @media (max-width: 991px) {
+        /* .cart_navigation_proceeding_btn {
+          margin-bottom: 70px;
+        } */
+      }
+      @media (max-width: 767px) {
+        /* .cart_navigation_proceeding_btn {
+          margin-bottom: 70px;
+        }
+        .cart_navigation_item_list {
+          height: calc(100vh - 18em);
+        } */
+      }
+      @media (max-width: 540px) {
+        /* .cart_navigation_item_list {
+          height: calc(100vh - 18em);
+        } */
+        .cart_navigation {
+    width: 310px;
+  }
+  .box_discount_section img {
+    width: 16px;
+}
+.quantity_tabs_main h6 {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 12px;
+}
+        .cart_navigation_heading h3 {
+          font-size: 20px;
+    line-height: 25px;
+  }
+  .quantity_tab_data li a {
+    padding: 11px 35px;
+  }
+  .box_discount_section p {
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .quantity_tabs_main {
+    padding: 16px 16px;
+  }
+  .quantity_tabs_parent {
+    margin-bottom: 15px;
+}
+.drag_cart_items_heading {
+  padding: 0px 10px 15px 20px;
+}
+.drag_cart_items_heading h5 {
+  font-size: 20px;
+    line-height: 28px;
+}
+.cart_navigation_item_list {
+    margin-bottom: 15px;
+    padding: 0px 20px 0px 20px;
+}
+.cart_navigation_proceeding_btn {
+    padding: 10px 20px;
+}
+.cart_navigation_heading {
+    padding: 0px 20px;
+}
+.drag_btn_main {
+    gap: 10px 20px;
+  }
+      }
+
+      @media (max-width: 1024px) {
+        /* .quantity_tab_data li a {
+          padding: 10px 35px;
+          font-size: 16px;
+          line-height: 25px;
+        } */
+      }
+    </style>
+    <div class="cart_navigation">
+      <div class="cart_navigation_header">
+        <div class="cart_navigation_heading">
+          <h3>make your box</h3>
+          <div class="cart_navigation_close_btn">
+            <i class="close_cart_navigation_btn fas fa-times"></i>
+          </div>
+        </div>
+        <div class="quantity_tabs_parent">
+          <div class="quantity_tabs_main">
+            <h6>Choose your box size</h6>
+            <ul
+              class="nav nav-tabs quantity_tab_data"
+              id="myTab"
+              role="tablist"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="home-tab"
+                  data-toggle="tab"
+                  href="#home"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                  >6</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="profile-tab"
+                  data-toggle="tab"
+                  href="#profile"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                  >12</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="contact-tab"
+                  data-toggle="tab"
+                  href="#contact"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                  >18</a
+                >
+              </li>
+            </ul>
+            <div class="box_discount_section">
+              <img
+                src="https://static.tossdown.com/images/a7287b56-a055-4d7a-a233-35fc42249c1b.webp"
+              />
+              <p>Enjoy <b>CAD 40.00</b> savings on this box</p>
+            </div>
+          </div>
+        </div>
+        <div class="drag_cart_items_heading"><h5>selected items (6/6)</h5></div>
+      </div>
+      <div class="cart_navigation_item_list">
+        <div class="cart_navigation_single_item">
+          <figure><img src="images/signup_logo.png" /></figure>
+          <div class="cart_navigation_single_item_detail">
+            <p>BARBECUE SAUCE</p>
+            
+            <div class="cart_navigation_qty_main">
+              <div class="cart_navigation_qty_plus_minu_btns">
+                <div class="counter_minus_btn">
+                  <a><i class="fa fa-minus"></i></a>
+                </div>
+                <span class="total_count_quantity">1</span>
+                <div class="counter_plus_btn">
+                  <a><i class="fa fa-plus"></i></a>
+                </div>
+              </div>
+              <div class="cart_navigation_del_btns">
+                <a><i class="far fa-trash-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart_navigation_single_item">
+          <figure><img src="images/signup_logo.png" /></figure>
+          <div class="cart_navigation_single_item_detail">
+            <p>BARBECUE SAUCE</p>
+            
+            <div class="cart_navigation_qty_main">
+              <div class="cart_navigation_qty_plus_minu_btns">
+                <div class="counter_minus_btn">
+                  <a><i class="fa fa-minus"></i></a>
+                </div>
+                <span class="total_count_quantity">1</span>
+                <div class="counter_plus_btn">
+                  <a><i class="fa fa-plus"></i></a>
+                </div>
+              </div>
+              <div class="cart_navigation_del_btns">
+                <a><i class="far fa-trash-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart_navigation_single_item">
+          <figure><img src="images/signup_logo.png" /></figure>
+          <div class="cart_navigation_single_item_detail">
+            <p>BARBECUE SAUCE</p>
+            
+            <div class="cart_navigation_qty_main">
+              <div class="cart_navigation_qty_plus_minu_btns">
+                <div class="counter_minus_btn">
+                  <a><i class="fa fa-minus"></i></a>
+                </div>
+                <span class="total_count_quantity">1</span>
+                <div class="counter_plus_btn">
+                  <a><i class="fa fa-plus"></i></a>
+                </div>
+              </div>
+              <div class="cart_navigation_del_btns">
+                <a><i class="far fa-trash-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      <div class="cart_navigation_proceeding_btn">
+        <div class="drag_btn_main">
+          <div class="subtotal_price_calculation">
+            <span>Subtotal</span><strong>CAD 129.99</strong>
+          </div>
+          <div class="cart_navigation_checkout_btn"><a>Checkout</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="draging_icon_parent" id="parent">
+      <div class="draging_icon">
+        <img src="https://static.tossdown.com/images/14f80f30-18d1-41c2-ae64-8a009b7ee62b.webp">
+        <div class="drag_click_btn_qty">
+          <span>6</span><small>/</small><span>6</span>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <script src="jquery-ui-touch-punch-master/jquery.ui.touch-punch.min.js"></script>
+    <script>
+      $(function () {
+        $(".draging_icon").draggable({ containment: "parent" });
+      });
+
+      $(".draging_icon").click(function () {
+        $(".cart_navigation").addClass("active");
+        $(".draging_icon").addClass("active");
+      });
+      $(".close_cart_navigation_btn").click(function () {
+        $(".cart_navigation").removeClass("active");
+        $(".draging_icon").removeClass("active");
+      });
+    </script>
+  </body>
 </html>

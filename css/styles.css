@@ -74,12 +74,21 @@ body {
   justify-content: center;
   width: 100%;
   padding: 30px 20px;
-  opacity: 0px;
-  visibility: hidden;
+  opacity: 0;
+
+
 }
+
 .responsive_content.active{
-  opacity: 1px;
-  visibility: visible;
+  animation:0.4s ease 0.4s normal forwards 1 fadein;
+-webkit-animation:0.4s ease 0.4s normal forwards 1 fadein;
+}
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
 }
 .responsive_content a {
   color: #000;
@@ -251,6 +260,18 @@ text-align: center;
   text-decoration: none;
   color: #000 !important;
   transition: 0.3s ease-in-out;
+  animation: fadeInAnimationbutton ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimationbutton {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+
 }
 .banner_button a:hover{
   text-decoration: none;

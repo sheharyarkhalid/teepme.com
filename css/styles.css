@@ -5,11 +5,15 @@
   font-family: Helvetica, sans-serif, sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 140px;
-  font-family: Canopee;
+ 
 }
 @font-face {
   font-family: Canopee;
   src: url(Canopee\ Regular.otf);
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: Canopee;
+
 }
 
 body {
@@ -17,7 +21,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  font-family: Canopee;
+  font-family: Helvetica, sans-serif, sans-serif;
   padding: 0;
 }
 #myBtn {
@@ -246,9 +250,15 @@ text-align: center;
   font-weight: 700;
   text-decoration: none;
   color: #000 !important;
+  transition: 0.3s ease-in-out;
 }
 .banner_button a:hover{
   text-decoration: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: -3px 3px 0px 0px #fff;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff !important;
 }
 @media (max-width: 768px) {
   .banner{
@@ -512,7 +522,7 @@ padding-top: 30px;
     justify-content: center;
   gap: 15px 15px;
   width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
  .insta_custom_box {
     width: 100%;

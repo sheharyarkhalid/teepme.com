@@ -1,698 +1,844 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<!--====================================
+=            Adeofarma website         =
+=====================================-->
 
-    <meta charset="UTF-8">
-     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no, viewport-fit=cover"
-    />
-   
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>Adeofarma</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/adeo.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Adeofarma">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+</head>
 
-    <title>DigiMedia - Creative SEO HTML5 Template</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+  <nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0 fixed-top"
+    style="background-color: #fff; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); z-index: 1000;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/top1.png" alt="logo"></a>
+      <!-- <button class="navbar-toggler openButton" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="ti-menu"></span>
+      </button> -->
+      <button class="navbar-toggler closeButton ">
+        <span class="ti-menu"></span>
+      </button>
 
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-digimedia-v1.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-<!--
-
-TemplateMo 568 DigiMedia
-
-https://templatemo.com/tm-568-digimedia
-
--->
-  </head>
-
-<body>
-
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown @@whatwedo">
+            <a class="nav-link dropdown-toggle" href="#" id="whatWeDoDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              WHAT WE DO?
+            </a>
+            <!-- BEGIN: ed8c6549bwf9 -->
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="whatWeDoDropdown">
+              <a class="dropdown-item" href="#locally">
+                <span class="dropdown-item-text">IN-BALTICS</span>
+              </a>
+              <a class="dropdown-item" href="#globaly">
+                <span class="dropdown-item-text">WORLD WIDE</span>
+              </a>
+            </div>
+            <!-- END: ed8c6549bwf9 -->
+          </li>
+          <li class="nav-item @@partner">
+            <a class="nav-link" href="#partner" onclick="smoothScroll('partner')">PARTNERS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Evolution</a>
+          </li>
+          <li class="nav-item @@contact">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+          <li class="nav-item dropdown @@kalba">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">EN
+              <span><i class="ti-angle-down"></i></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item @@lt" href="/lt">LT</a></li>
+              <li><a class="dropdown-item @@lv" href="/lv">LV</a></li>
+              <li><a class="dropdown-item @@en" href="/en">EN</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
+  </nav>
 
-  <!-- Pre-header Starts -->
-  <div class="pre-header">
+  <!--====================================
+=            Hero Section            =
+=====================================-->
+
+  <section class="section gradient-banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center order-1 order-md-1">
+          <h1 class="text-white mb-4">WEL<b>COME </b>TO <b>ADEO</b>FARMA</h1>
+          <h3 class="text-white mb-5">Your trusted and flexible pharmaceutical partner, bringing over a decade of
+            industry excellence to every cooperation.</h3>
+          <a href="#contact" class="btn btn-primary">Contact us</a>
+        </div>
+        <div class="col-md-6 order-2 order-md-2 text-center text-md-left">
+          <img class="img-fluid" src="images/titulinislogo.png" alt="screenshot">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--====  End of Hero Section  ====-->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style>
+    /* Add cursor: pointer to clickable elements */
+    .clickable {
+      cursor: pointer;
+    }
+  </style>
+
+  <script>
+    // Enable Bootstrap tooltips
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Additional Header -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <section class="section services-section" id="locally">
+    <header
+      style="text-align: center; color: #01225A; padding: 20px; font-size: 46px; font-weight: bold; margin: 0 auto;">
+      What we do in Lithuania, Latvia, Estonia
+    </header>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-sm-8 col-7">
-          <ul class="info">
-            <li><a href="#"><i class="fa fa-envelope"></i>digimedia@company.com</a></li>
-            <li><a href="#"><i class="fa fa-phone"></i>010-020-0340</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-sm-4 col-5">
-          <ul class="social-media">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          </ul>
+        <div class="col-lg-6">
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Pre-header End -->
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
       <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo-v1.png" alt="">
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#about">About</a></li>
-              <li class="scroll-to-section"><a href="#services">Services</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Projects</a></li>
-              <li class="scroll-to-section"><a href="#blog">Blog</a></li>
-              <li class="scroll-to-section"><a href="#contact">Contact</a></li> 
-              <li class="scroll-to-section"><div class="border-first-button"><a href="#contact">Free Quote</a></div></li> 
-            </ul>        
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1">
+            <div class="icon">
+              <i class="fa fa-gavel"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Regulatory</h5>
+              <p>&#x2022; Marketing authorizations <br>&#x2022; Translations <br>&#x2022; Variations <br>&#x2022;
+                Renewal</p>
+            </div>
+          </div>
         </div>
+        <!-- / -->
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1">
+            <div class="icon">
+              <i class="fa fa-medkit"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Pharmacovigilance</h5>
+              <p>&#x2022; Scientific service <br>&#x2022; Individual case safety reports <br>&#x2022; Product safety
+                profile<br>&#x2022; Regulatory intelligence</p>
+            </div>
+          </div>
+        </div>
+        <!-- / -->
+        <!-- feaure box -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1">
+            <div class="icon">
+              <i class="fa fa-briefcase"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Portfolio</h5>
+              <p>&#x2022; Analysis <br>&#x2022; Strategy <br>&#x2022; Selection <br>&#x2022; Development</p>
+            </div>
+          </div>
+        </div>
+        <!-- / -->
+        <!-- feaure box -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1">
+            <div class="icon">
+              <i class="fa fa-truck"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Supply chain</h5>
+              <p>&#x2022; Collecting <br>&#x2022; Storage <br>&#x2022; Packing <br>&#x2022; Delivering</p>
+            </div>
+          </div>
+        </div>
+        <!-- / -->
+        <!-- feaure box -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1">
+            <div class="icon">
+              <i class="fa fa-bullhorn"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Sales & Marketing</h5>
+              <p>&#x2022; Strategy <br>&#x2022; Budget <br>&#x2022; Customers <br>&#x2022; Promoting & tracking</p>
+            </div>
+          </div>
+        </div>
+        <!-- / -->
+        <!-- feaure box -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1">
+            <div class="icon">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Market access</h5>
+              <p>&#x2022; Market assessment <br>&#x2022; Strategy <br>&#x2022; Communication <br>&#x2022; Pricing &
+                Reimbursement</p>
+            </div>
+          </div>
+        </div>
+        <!-- / -->
       </div>
     </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+  </section>
 
-  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+  <section style="text-align: center; margin-top: -100px;" class="section partner-section" id="partner">
+    <header
+      style="text-align: center; color: #01225A; padding: 20px; font-size: 46px; font-weight: bold; margin: 0 auto;">
+      PARTNERS
+    </header>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h6>Digital Media Agency</h6>
-                    <h2>We Boost Your Website Traffic</h2>
-                    <p>This template is brought to you by TemplateMo website. Feel free to use this for a commercial purpose. You are not allowed to redistribute the template ZIP file on any other template website. Thank you.</p>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="border-first-button scroll-to-section">
-                      <a href="#contact">Free Quote</a>
+          <p style="font-size: 18px;">Our main focus is hospital lines and non-registered pharmaceuticals, <br> UAB
+            “Adeofarma” is always looking for new partners to represent their portfolio in Lithuania, Latvia and
+            Estonia. <br>Our current partners:</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--divinectorweb.com-->
+  <!-- Client 1 - Bootstrap Brain Component -->
+  <section class="py-3 py-md-5 py-xl-8">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+          <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+        </div>
+      </div>
+    </div>
+    <div class="container overflow-hidden">
+      <div class="row gy-5">
+        <div class="col-12" style="overflow: hidden;">
+          <div class="logo-container" style="animation: infiniteScroll 30s linear infinite;">
+            <div class="col-6 col-md-3 align-self-center text-center">
+              <img src="images/partner/ROVI.png" alt="Partner Image" width="100" height="80" class="text-dark">
+            </div>
+            <div class="col-6 col-md-3 align-self-center text-center">
+              <img src="images/partner/ASAC.png" alt="Partner Image" width="200" height="65" class="text-dark">
+            </div>
+            <div class="col-6 col-md-3 align-self-center text-center">
+              <img src="images/partner/ANFARM.png" alt="Partner Image" width="100" height="70" class="text-dark">
+            </div>
+            <div class="col-6 col-md-3 align-self-center text-center">
+              <img src="images/partner/LAPHYSAN.png" alt="Partner Image" width="150" height="80" class="text-dark">
+            </div>
+            <div class="col-6 col-md-3 align-self-center text-center">
+              <img src="images/partner/PANPHARMA.png" alt="Partner Image" width="275" height="100" class="text-dark">
+            </div>
+            <div class="col-6 col-md-3 align-self-center text-center">
+              <img src="images/partner/ROMPHARM.png" alt="Partner Image" width="500" height="200" class="text-dark">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      @keyframes infiniteScroll {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(calc(-100% - 15px));
+        }
+      }
+
+      .logo-container {
+        display: flex;
+        white-space: nowrap;
+        animation-timing-function: linear;
+      }
+
+      .col-6 {
+        flex: 0 0 auto;
+      }
+    </style>
+
+    <style>
+      .timeline-section {
+        margin: 6.25rem 0;
+      }
+
+      @media screen and (max-width: 64em) {
+        .timeline-section {
+          margin: 3.75rem 0;
+        }
+      }
+
+      @media screen and (max-width: 47.9375em) {
+        .timeline-section {
+          margin: 2.5rem 0;
+        }
+      }
+
+      .timeline-section .timeline__heading {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5rem;
+      }
+
+      @media screen and (max-width: 47.9375em) {
+        .timeline-section .timeline__heading {
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .timeline-section .timeline__heading .slider-navigation {
+        margin-left: auto;
+        display: flex;
+      }
+
+      @media screen and (max-width: 64em) {
+        .timeline-section .timeline__heading .slider-navigation {
+          display: none;
+        }
+      }
+
+      .timeline-section .timeline__slider-wrap {
+        position: relative;
+      }
+
+      @media screen and (max-width: 64em) {
+        .timeline-section .timeline__slider-wrap {
+          display: none;
+        }
+      }
+
+      .timeline-section .timeline__mobile {
+        display: none;
+        position: relative;
+      }
+
+      @media screen and (max-width: 64em) {
+        .timeline-section .timeline__mobile {
+          display: flex;
+        }
+      }
+
+      .timeline-section .timeline__mobile__wrap {
+        width: 100%;
+      }
+
+      .timeline-section .timeline__progress {
+        position: absolute;
+        left: 0;
+        top: 0.3125rem;
+        width: 100%;
+        height: 0.125rem;
+        background-color: #2164C5;
+      }
+
+      @media screen and (max-width: 64em) {
+        .timeline-section .timeline__progress {
+          position: absolute;
+          width: 0.125rem;
+          height: calc(100% - 0.375rem);
+          bottom: 0;
+          top: auto;
+        }
+      }
+
+      .timeline-section .timeline__progress svg {
+        position: absolute;
+        right: -0.1875rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      @media screen and (max-width: 64em) {
+        .timeline-section .timeline__progress svg {
+          bottom: -0.1875rem;
+          right: 50%;
+          top: auto;
+          transform: translateX(50%) translateY(0);
+        }
+      }
+
+      .timeline-section .timeline__item {
+        position: relative;
+      }
+
+      @media screen and (max-width: 64em) {
+        .timeline-section .timeline__item {
+          padding: 0 0 0 1.5625rem;
+          margin: 0 0 1.5rem;
+        }
+
+        .timeline-section .timeline__item:nth-last-child(1) {
+          margin: 0;
+        }
+      }
+
+      @media screen and (max-width: 64em) {
+        .timeline-section .timeline__item:nth-child(1) .timeline__item__point {
+          background-color: #2e2e36;
+        }
+      }
+
+      .timeline-section .timeline__item h3 {
+        font-weight: bold;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin: 0 0 2.5rem;
+        font-family: "Inter", sans-serif;
+      }
+
+      @media screen and (max-width: 64em) {
+        .timeline-section .timeline__item h3 {
+          margin: 0 0 1rem;
+        }
+      }
+
+      .timeline-section .timeline__item.swiper-slide-active .timeline__item__point {
+        background-color: #2e2e36;
+      }
+
+      .timeline-section .timeline__item__point {
+        height: 0.75rem;
+        width: 0.75rem;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 0.125rem solid #2e2e36;
+        margin: 0 0 1.4375rem;
+      }
+
+      @media screen and (max-width: 64em) {
+        .timeline-section .timeline__item__point {
+          position: absolute;
+          left: -0.3125rem;
+          top: 0.375rem;
+        }
+      }
+
+      .timeline-section .timeline__item__card {
+        background: #f8f8fa;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        margin: 0 0 1.5rem;
+      }
+
+      .timeline-section .timeline__item__card:nth-last-child(1) {
+        margin: 0;
+      }
+
+      .timeline-section .timeline__item__card h4 {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-family: "Inter", sans-serif;
+      }
+
+      .timeline-section .timeline__item__card p {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        margin: 0.5rem 0 0;
+      }
+    </style>
+
+    <section class="timeline-section">
+      <div class="container">
+        <div class="timeline reveal-parent">
+          <div class="timeline__heading reveal-item">
+            <h2 class="">Istorija</h2>
+            <div class="slider-navigation">
+              <div class="swiper-button swiper-button-prev btn btn--outline btn--slider-nav">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6 1.99981C6.3866 1.61321 7.0134 1.61321 7.4 1.9998C7.7866 2.3864 7.7866 3.01321 7.4 3.3998L3.8 6.9998H15C15.5523 6.9998 16 7.44752 16 7.9998C16 8.55209 15.5523 8.9998 15 8.9998H3.8L7.4 12.5998C7.7866 12.9864 7.7866 13.6132 7.4 13.9998C7.0134 14.3864 6.3866 14.3864 6 13.9998L0 7.9998L6 1.99981Z"
+                    fill="#2E2E36"></path>
+                </svg>
+              </div>
+              <div class="swiper-button swiper-button-next btn btn--outline btn--slider-nav">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10 1.99981C9.6134 1.61321 8.9866 1.61321 8.6 1.9998C8.2134 2.3864 8.2134 3.01321 8.6 3.3998L12.2 6.9998H0.999999C0.447714 6.9998 0 7.44752 0 7.9998C0 8.55209 0.447715 8.9998 1 8.9998H12.2L8.6 12.5998C8.2134 12.9864 8.2134 13.6132 8.6 13.9998C8.9866 14.3864 9.6134 14.3864 10 13.9998L16 7.9998L10 1.99981Z"
+                    fill="#2E2E36"></path>
+                  <section class="timeline">
+              </div>
+            </div>
+          </div>
+          <div class="timeline__slider-wrap reveal-item">
+            <div class="timeline__progress">
+              <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.58586 9.00008L0.292969 1.70718L1.70718 0.292969L10.4143 9.00008L1.70718 17.7072L0.292969 16.293L7.58586 9.00008Z"
+                  fill="#2164C5"></path>
+              </svg>
+            </div>
+            <div class="swiper timeline-slider-swiper">
+              <div class="swiper-wrapper" style="
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;">
+                <div class="swiper-slide timeline__item">
+                  <div class="timeline__item__point"></div>
+                  <h3>2012</h3>
+                  <div class="timeline__item__cards">
+                    <div class="timeline__item__card">
+                      <h4> Pradeda veikti CityBee</h4>
+
                     </div>
+                  </div>
+                </div>
+                <div class="swiper-slide timeline__item">
+                  <div class="timeline__item__point"></div>
+                  <h3>2016</h3>
+                  <div class="timeline__item__cards">
+                    <div class="timeline__item__card">
+                      <h4>Plečiamės į Kauną</h4>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide timeline__item">
+                  <div class="timeline__item__point"></div>
+                  <h3>2017</h3>
+                  <div class="timeline__item__cards">
+                    <div class="timeline__item__card">
+                      <h4>Plečiamės į pajūrį</h4>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide timeline__item">
+                  <div class="timeline__item__point"></div>
+                  <h3>2018</h3>
+                  <div class="timeline__item__cards">
+                    <div class="timeline__item__card">
+                      <h4>Plečiamės į Lenkiją</h4>
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="timeline__mobile reveal-item">
+            <div class="timeline__progress">
+              <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.99992 7.58586L16.2928 0.292969L17.707 1.70718L8.99992 10.4143L0.292816 1.70718L1.70703 0.292968L8.99992 7.58586Z"
+                  fill="#2164C5"></path>
+              </svg>
+            </div>
+            <div class="timeline__mobile__wrap">
+              <div class="timeline__item">
+                <div class="timeline__item__point"></div>
+                <h3>2012</h3>
+                <div class="timeline__item__cards">
+                  <div class="timeline__item__card">
+                    <h4> Pradeda veikti CityBee</h4>
+                    <p>Vilniuje atsiranda 50 fiat 500 bičių skirtų miesto kelionėms.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__item">
+                <div class="timeline__item__point"></div>
+                <h3>2016</h3>
+                <div class="timeline__item__cards">
+                  <div class="timeline__item__card">
+                    <h4>Plečiamės į Kauną</h4>
+                    <p>Automobilį galima paimti Vilniuje, o palikti Kaune ir atvirkščiai.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__item">
+                <div class="timeline__item__point"></div>
+                <h3>2017</h3>
+                <div class="timeline__item__cards">
+                  <div class="timeline__item__card">
+                    <h4>Plečiamės į pajūrį</h4>
+                    <p>Veikiame Klaipėdoje, Palangoje, Neringoje, Kretingoje ir Gargžduose!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__item">
+                <div class="timeline__item__point"></div>
+                <h3>2018</h3>
+                <div class="timeline__item__cards">
+                  <div class="timeline__item__card">
+                    <h4>Plečiamės į Lenkiją</h4>
+                    <p>Veikiame Varšuvoje, Gdanske, Krokuvoje, Vroclave, Poznanėje ir kituose miestuose.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__item">
+                <div class="timeline__item__point"></div>
+                <h3>2019</h3>
+                <div class="timeline__item__cards">
+                  <div class="timeline__item__card">
+                    <h4>Paspirtukai!</h4>
+                    <p>Visą sezoną džiuginame klientus Lietuvoje, Ispanijoje ir Lenkijoje.</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/slider-dec.png" alt="">
+    </section>
+    <!-- Services Section 2 -->
+    <section class="section services-globaly" id="globaly">
+      <header style="text-align: center; color: #01225A; padding: 20px; font-size: 46px; font-weight: bold;">
+        What we do in Europe and in rest of the world:
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+          </div>
+        </div>
+        <div class="row">
+          <!-- Service Box 4 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="feature-box-1">
+              <div class="icon">
+                <i class="fa fa-truck"></i>
+              </div>
+              <div class="feature-content">
+                <h5>International sales</h5>
+                <p>&#x2022; Pharmaceuticals <br>&#x2022; Aestetics <br>&#x2022; Cosmetics</p>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!-- Service Box 5 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="feature-box-1">
+              <div class="icon">
+                <i class="fa fa-bullhorn"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Clinical trials supply</h5>
+                <p>&#x2022; Sourcing <br>&#x2022; Storage <br>&#x2022; locally</p>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+          <!-- / -->
+        </div>
+      </div>
+    </section>
+    <!-- Company Evolution -->
+
+
+    <section style="text-align: left; margin-top: -100px;" class="section contact-section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <header
+              style="color: #01225A; padding: 20px; font-size: 46px; font-weight: bold; margin-bottom: 20px; text-align: center;">
+              CONTACT US
+            </header>
+            <div class="contact-info">
+              <div class="contact-item">
+                <p style="font-size: 18px; line-height: 1.6;">
+                  <strong>UAB “Adeofarma”</strong> <br>
+                  <strong>Correspondence address:</strong> Goštauto 8-205, LT-01108, Vilnius, Lithuania<br>
+                  <strong>E-mail:</strong> <a href="mailto:info@adeofarma.com">info@adeofarma.com</a><br>
+                  <strong>Tel:</strong> +370 5 2000659<br>
+                  <strong>Company ID:</strong> 303097819<br>
+                  <strong>VAT Number:</strong> LT100007929814<br>
+                </p>
+              </div>
+
+              <div class="contact-item">
+                <p style="font-size: 18px; line-height: 1.6;">
+                  <strong>Website:</strong> <a href="https://www.adeofarma.com"
+                    target="_blank">www.adeofarma.com</a><br><br>
+                  <strong>To report Adverse Drug Reaction or ask Medical Information Enquiry:</strong><br>
+                  <strong>Email:</strong> <a
+                    href="mailto:pharmacovigilance@adeofarma.com">pharmacovigilance@adeofarma.com</a><br>
+                  <strong>Ph.:</strong> +370 5 2000659<br><br>
+                </p>
+              </div>
+
+              <div class="contact-item">
+                <p style="font-size: 18px; line-height: 1.6;">
+                  <strong>Social Media:</strong><br>
+                  <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/adeofarma-uab"
+                    target="_blank">Adeofarma</a><br><br>
+                  <strong>Documents:</strong><br>
+                  <strong>WDL:</strong> <a href="https://vapris.vvkt.lt/vvkt-web/public/subsidiaries/0866/5075"
+                    target="_blank">WDL</a><br>
+                  <strong>GDP Certificate:</strong> <a
+                    href="https://www.adeofarma.com/wp-content/uploads/2016/03/GDP-certificate-Adeofarma.pdf"
+                    target="_blank">GDP Certificate</a><br>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div id="about" class="about section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/about-dec.png" alt="">
-              </div>
-            </div>
-            <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="about-right-content">
-                <div class="section-heading">
-                  <h6>About Us</h6>
-                  <h4>Who is DigiMedia <em>Agency</em></h4>
-                  <div class="line-dec"></div>
-                </div>
-                <p>We hope this DigiMedia template is useful for your work. You can use this template for any purpose. You may <a rel="nofollow" href="http://paypal.me/templatemo" target="_blank">contribute a little amount</a> via PayPal to <a href="https://templatemo.com/contact" target="_blank">support TemplateMo</a> in creating new templates regularly.</p>
-                <div class="row">
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="90">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            90%<br>
-                            <span>Coding</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="80">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            80%<br>
-                            <span>Photoshop</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="80">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            80%<br>
-                            <span>Animation</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-              </div>
-            </div>
+    </section>
+    <section class="design-team section pt-0">
+      <header
+        style="text-align: center; color: #01225A; padding: 20px; font-size: 46px; font-weight: bold; margin: 0 auto;">
+        TEAM
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="services" class="services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h6>Our Services</h6>
-            <h4>What Our Agency <em>Provides</em></h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="naccs">
-            <div class="grid">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="menu">
-                    <div class="first-thumb active">
-                      <div class="thumb">
-                        <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
-                        Apartments
-                      </div>
-                    </div>
-                    <div>
-                      <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/service-icon-02.png" alt=""></span>
-                        Food &amp; Life
-                      </div>
-                    </div>
-                    <div>
-                      <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/service-icon-03.png" alt=""></span>
-                        Cars
-                      </div>
-                    </div>
-                    <div>
-                      <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/service-icon-04.png" alt=""></span>
-                        Shopping
-                      </div>
-                    </div>
-                    <div class="last-thumb">
-                      <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
-                        Traveling
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-                <div class="col-lg-12">
-                  <ul class="nacc">
-                    <li class="active">
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-6 align-self-center">
-                              <div class="left-text">
-                                <h4>SEO Analysis &amp; Daily Reports</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
-                                  dover lipsum lorem and the others.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span>
-                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
-                              </div>
-                            </div>
-                            <div class="col-lg-6 align-self-center">
-                              <div class="right-image">
-                                <img src="assets/images/services-image.jpg" alt="">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-6 align-self-center">
-                              <div class="left-text">
-                                <h4>Healthy Food &amp; Life</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
-                                  dover lipsum lorem and the others.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span>
-                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
-                              </div>
-                            </div>
-                            <div class="col-lg-6 align-self-center">
-                              <div class="right-image">
-                                <img src="assets/images/services-image-02.jpg" alt="">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-6 align-self-center">
-                              <div class="left-text">
-                                <h4>Car Re-search &amp; Transport</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
-                                  dover lipsum lorem and the others.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span>
-                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
-                              </div>
-                            </div>
-                            <div class="col-lg-6 align-self-center">
-                              <div class="right-image">
-                                <img src="assets/images/services-image-03.jpg" alt="">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-6 align-self-center">
-                              <div class="left-text">
-                                <h4>Online Shopping &amp; Tracking ID</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
-                                  dover lipsum lorem and the others.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span>
-                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
-                              </div>
-                            </div>
-                            <div class="col-lg-6 align-self-center">
-                              <div class="right-image">
-                                <img src="assets/images/services-image-04.jpg" alt="">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-6 align-self-center">
-                              <div class="left-text">
-                                <h4>Enjoy &amp; Travel</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
-                                  dover lipsum lorem and the others.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span>
-                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
-                              </div>
-                            </div>
-                            <div class="col-lg-6 align-self-center">
-                              <div class="right-image">
-                                <img src="assets/images/services-image.jpg" alt="">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <!-- Team -->
+            <div class="team-sm">
+              <!-- Team Member Image -->
+              <div class="image">
+                <img class="w-100" src="images/team/andrius.png" alt="member-image">
+                <!-- Social Contacts -->
+                <div class="social-links">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://adeofarma.com/"><i class="ti-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="https://adeofarma.com/"><i class="ti-email"></i></a></li>
                   </ul>
-                </div>          
+                </div>
               </div>
+              <!-- Name -->
+              <h3>Andrius Kubilius</h3>
+              <!-- Position -->
+              <cite>General Manager</cite>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <!-- Team -->
+            <div class="team-sm">
+              <!-- Team Member Image -->
+              <div class="image">
+                <img class="w-100" src="images/team/danielius.png" alt="member-image">
+                <!-- Social Contacts -->
+                <div class="social-links">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://adeofarma.com/"><i class="ti-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="https://adeofarma.com/"><i class="ti-email"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Name -->
+              <h3>Danielius Venskus</h3>
+              <!-- Position -->
+              <cite>Business Development Manager <br>RA & PhV Manager</cite>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <!-- Team -->
+            <div class="team-sm">
+              <!-- Team Member Image -->
+              <div class="image">
+                <img class="w-100" src="images/team/raminta.png" alt="member-image">
+                <!-- Social Contacts -->
+                <div class="social-links">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://adeofarma.com/"><i class="ti-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="https://adeofarma.com/"><i class="ti-email"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Name -->
+              <h3>Raminta Šugalska</h3>
+              <!-- Position -->
+              <cite>Process Management Manager</cite>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <!-- Team -->
+            <div class="team-sm">
+              <!-- Team Member Image -->
+              <div class="image">
+                <img class="w-100" src="images/team/paulius.png" alt="member-image">
+                <!-- Social Contacts -->
+                <div class="social-links">
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://adeofarma.com/"><i class="ti-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="https://adeofarma.com/"><i class="ti-email"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Name -->
+              <h3>Paulius Brazauskas</h3>
+              <!-- Position -->
+              <cite>Responsible Person</cite>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  
-  <div id="free-quote" class="free-quote">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 offset-lg-4">
-          <div class="section-heading  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-            <h6>Get Your Free Quote</h6>
-            <h4>Grow With Us Now</h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-        <div class="col-lg-8 offset-lg-2  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-          <form id="search" action="#" method="GET">
-            <div class="row">
-              <div class="col-lg-4 col-sm-4">
-                <fieldset>
-                  <input type="web" name="web" class="website" placeholder="Your website URL..." autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-4 col-sm-4">
-                <fieldset>
-                  <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-4 col-sm-4">
-                <fieldset>
-                  <button type="submit" class="main-button">Get Quote Now</button>
-                </fieldset>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div id="portfolio" class="our-portfolio section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-            <h6>Our Portofolio</h6>
-            <h4>See Our Recent <em>Projects</em></h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="loop owl-carousel">
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/portfolio-01.jpg" alt="">
-                </div>
-                <div class="down-content">
-                  <h4>Website Builder</h4>
-                  <span>Marketing</span>
-                </div>
-              </div>
-              </a>  
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/portfolio-01.jpg" alt="">
-                </div>
-                <div class="down-content">
-                  <h4>Website Builder</h4>
-                  <span>Marketing</span>
-                </div>
-              </div>
-              </a>  
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/portfolio-02.jpg" alt="">
-                </div>
-                <div class="down-content">
-                  <h4>Website Builder</h4>
-                  <span>Marketing</span>
-                </div>
-              </div>
-              </a>  
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/portfolio-03.jpg" alt="">
-                </div>
-                <div class="down-content">
-                  <h4>Website Builder</h4>
-                  <span>Marketing</span>
-                </div>
-              </div>
-              </a>  
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/portfolio-04.jpg" alt="">
-                </div>
-                <div class="down-content">
-                  <h4>Website Builder</h4>
-                  <span>Marketing</span>
-                </div>
-              </div>
-              </a>  
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div id="blog" class="blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 offset-lg-4  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="section-heading">
-            <h6>Recent News</h6>
-            <h4>Check Our Blog <em>Posts</em></h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-        <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="blog-post">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/blog-post-01.jpg" alt=""></a>
-            </div>
-            <div class="down-content">
-              <span class="category">SEO Analysis</span>
-              <span class="date">03 August 2021</span>
-              <a href="#"><h4>Lorem Ipsum Dolor Sit Amet, Consectetur Adelore
-                Eiusmod Tempor Incididunt</h4></a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers itii eiumod deis tempor incididunt ut labore.</p>
-              <span class="author"><img src="assets/images/author-post.jpg" alt="">By: Andrea Mentuzi</span>
-              <div class="border-first-button"><a href="#">Discover More</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="blog-posts">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="post-item">
-                  <div class="thumb">
-                    <a href="#"><img src="assets/images/blog-post-02.jpg" alt=""></a>
-                  </div>
-                  <div class="right-content">
-                    <span class="category">SEO Analysis</span>
-                    <span class="date">24 September 2021</span>
-                    <a href="#"><h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4></a>
-                    <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="post-item">
-                  <div class="thumb">
-                    <a href="#"><img src="assets/images/blog-post-03.jpg" alt=""></a>
-                  </div>
-                  <div class="right-content">
-                    <span class="category">SEO Analysis</span>
-                    <span class="date">24 September 2021</span>
-                    <a href="#"><h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4></a>
-                    <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="post-item last-post-item">
-                  <div class="thumb">
-                    <a href="#"><img src="assets/images/blog-post-04.jpg" alt=""></a>
-                  </div>
-                  <div class="right-content">
-                    <span class="category">SEO Analysis</span>
-                    <span class="date">24 September 2021</span>
-                    <a href="#"><h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4></a>
-                    <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>  
-
-  <div id="contact" class="contact-us section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h6>Contact Us</h6>
-            <h4>Get In Touch With Us <em>Now</em></h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="contact-dec">
-                  <img src="assets/images/contact-dec.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-5">
-                <div id="map">
-                  <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="636px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="fill-form">
-                  <div class="row">
-                    <div class="col-lg-4">
-                      <div class="info-post">
-                        <div class="icon">
-                          <img src="assets/images/phone-icon.png" alt="">
-                          <a href="#">010-020-0340</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="info-post">
-                        <div class="icon">
-                          <img src="assets/images/email-icon.png" alt="">
-                          <a href="#">our@email.com</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="info-post">
-                        <div class="icon">
-                          <img src="assets/images/location-icon.png" alt="">
-                          <a href="#">123 Rio de Janeiro</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
-                      </fieldset>
-                      <fieldset>
-                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
-                      </fieldset>
-                      <fieldset>
-                        <input type="subject" name="subject" id="subject" placeholder="Subject" autocomplete="on">
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="main-button ">Send Message Now</button>
-                      </fieldset>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
 
   <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2022 DigiMedia Co., Ltd. All Rights Reserved. 
-          <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
-        </div>
-      </div>
+    <div class="text-center bg-dark py-4">
+      <small class="text-secondary mx-auto">Copyright &copy; Developed by <a
+          href="https://adeofarma.com/">Adeofarma</a></small>
     </div>
   </footer>
 
 
-  <!-- Scripts -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/custom.js"></script>
 
+  <!-- To Top -->
+  <div class="scroll-top-to">
+    <i class="ti-angle-up"></i>
+  </div>
+
+  <!-- JAVASCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="ll.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".closeButton").click(function () {
+        $("#navbarNav").toggle('show');
+      });
+    });
+
+  </script>
 </body>
+
 </html>
